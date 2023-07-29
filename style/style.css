@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    min-height: 100vh;
+    background: url('/style/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.welcome{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 400;
+    margin-bottom: 0;
+    display: flexbox;
+    position: absolute;
+}
+.explore{
+    background-color: white;
+    display: block;
+    margin-top: 300px;
+    margin-left: 200px;
+    position: absolute;
+}
+.explore:hover{
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    background-color:lightblue;
+    transition: 0.5s;
+}
+.explore a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+}
