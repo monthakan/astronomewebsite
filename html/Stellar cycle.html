@@ -14,11 +14,18 @@
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="lesson">
@@ -29,8 +36,8 @@
         <br>
         <p> &nbsp; &nbsp;ดาวฤกษ์เกิดขึ้นจากกลุ่มแก๊สและฝุ่นรวมตัวกัน ซึ่งเรียกว่า เนบิวลา เมื่อก๊าซร้อนในเนบิวลาอัดแน่นจนมีอุณหภูมิสูงถึง 10 ล้านเคลวิน จะเกิดปฏิกิริยานิวเคลียร์ฟิวชั่นหลอมรวมไฮโดนเจนให้เป็นฮีเลียม กำเนิดเป็นดาวฤกษ์  ดาวฤกษ์ที่เห็นบนท้องฟ้าส่วนมากเป็นดาวในลำดับหลัก 
             เมื่อดาวใกล้หมดอายุจะออกจากลำดับหลักไปเป็นดาวยักษ์แดง และมีวิวัฒนาการที่ต่างกันขึ้นอยู่กับมวลตั้งต้นที่กำเนิดเป็นดาว ดังนี้</p>
-        <img style="margin-left: 350px;" src="https://repaythailand.com/wp-content/uploads/2021/03/Star-evolution-1.png" alt="">
-        <p style="margin-left: 600px ;"> <span>วัฏจักรชีวิตของดาวฤกษ์</span></p>
+        <img style="margin-left: auto;" src="https://repaythailand.com/wp-content/uploads/2021/03/Star-evolution-1.png" alt="">
+        <p style="margin-left: auto ;"> <span>วัฏจักรชีวิตของดาวฤกษ์</span></p>
         <br>
         <div class="list">
             <ul>
@@ -61,5 +68,12 @@
             <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
         </div>
     </footer>
+    <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

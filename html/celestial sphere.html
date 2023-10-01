@@ -14,11 +14,18 @@
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="lesson">
@@ -96,7 +103,7 @@
                     </div>
                 </p>
                 <img class="imgggg" src="http://www.lesa.biz/_/rsrc/1597240915873/astronomy/celestial-sphere/celestial-motion/wbg%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%A1%E0%B8%9F%E0%B9%89%E0%B8%B2%202.png?height=258&width=320" alt="">
-                <p style="margin-left: 500px ;">ผู้สังเกตการณ์อยู่ที่ละติจูด 0°</p>
+                <p style="margin-left: auto ;">ผู้สังเกตการณ์อยู่ที่ละติจูด 0°</p>
                 <br>
                 <P> &nbsp; &nbsp; เมื่อมองจากพื้นโลกเราจะเห็นทรงกลมท้องฟ้าเคลื่อนที่จากทิศตะวันออกไปยังทิศตะวันตก  อย่างไรก็ตามเนื่องจากโลกของเราเป็นทรงกลม ดังนั้นมุมมองของการเคลื่อนที่ของทรงกลมท้องฟ้า ย่อมขึ้นอยู่กับตำแหน่งละติจูด (เส้นรุ้ง)
                      ของผู้สังเกตการณ์  เป็นต้นว่า ถ้าผู้สังเกตการณ์อยู่บนเส้นศูนย์สูตร หรือละติจูด 0°    ขั้วฟ้าเหนือจะอยู่ที่ขอบฟ้าด้านทิศเหนือพอดี  (ภาพข้างต้น)</P>
@@ -114,6 +121,13 @@
             <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
         </div>
     </footer>
+    <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>

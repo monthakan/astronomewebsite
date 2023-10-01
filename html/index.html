@@ -9,16 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-     <title>หน้าหลัก</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>หน้าหลัก</title>
 </head>
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="welcome">
@@ -30,11 +38,13 @@
            <a href="lesson.html" target="_blank" rel="noopener noreferrer">explore</a>
         </button>
     </div>
-    <!-- <footer>
-        <div class="footernav">
-            <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
-        </div>
-    </footer> -->
+    <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
     
 </body>
 </html>

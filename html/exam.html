@@ -16,11 +16,18 @@
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="content">
@@ -158,5 +165,12 @@
             <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
         </div>
     </footer>
+    <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

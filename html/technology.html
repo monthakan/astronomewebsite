@@ -16,11 +16,18 @@
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="content">
@@ -32,7 +39,7 @@
             </div>
         </div>
         <div class="one">
-            <img class ="img" src="https://th.bing.com/th/id/OIP.DPZJoS9WE6X_Wc7VA7C4BgAAAA?pid=ImgDet&rs=1" alt="">
+            <img class ="img" src="https://th.bing.com/th/id/R.9a5238dd0952bb73e7c52569e4fbb26b?rik=ie6re8r2OpSCyw&pid=ImgRaw&r=0" alt="">
             <div>
                <h3>ดาวเทียม</h3>
                <button class="readmore" ><a href="satellite.html"> readmore </a></button>
@@ -65,5 +72,12 @@
             <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
         </div>
     </footer>
+    <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

@@ -14,11 +14,18 @@
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="lesson">
@@ -35,7 +42,7 @@
         <p>&nbsp; &nbsp; นักวิทยาศาสตร์ประมาณว่า ในปัจจุบันมีขยะอวกาศขนาดเล็กซึ่งไม่สามารถตรวจจับได้จำนวนมากกว่าร้อยล้านชิ้นล่องลอยอยู่ในวงโคจรรอบโลก และมีขยะอวกาศที่มีขนาดใหญ่กว่า 10 เซนติเมตร ซึ่งสามารถตรวจจับได้โดยกล้องโทรทรรศน์บนพื้นโลกประมาณ 47,000 ชิ้น  เนื่องจากวัตถุเหล่านี้เคลื่อนที่ด้วยความเร็วมากกว่า 20,000 กิโลเมตร/ชั่วโมง เมื่อมันปะทะกับสิ่งใดก็จะก่อให้เกิดพลังงานมหาศาล ยกตัวอย่าง ขยะอวกาศขนาด 1 กิโลกรัม เคลื่อนที่ด้วยความเร็ว 7.5 กิโลเมตรต่อวินาที จะก่อให้เกิดพลังงานเทียบเท่ารถบัสขนาด 16 ตัน เคลื่อนที่ด้วยความเร็ว 216 กิโลเมตร/ชั่วโมง 
             ดังนั้นเมื่อมันปะทะเข้ากับดาวเทียม หรือ สถานีอวกาศ ก็จะเกิดความเสียหายอย่างใหญ่หลวง แบบที่เรียกได้ว่า “ตายอย่างไม่รู้ตัว” </p>
         <img class="imgggg" src="http://www.lesa.biz/_/rsrc/1587444701237/space-technology/space-debris/4.jpg?height=208&width=320" alt="">
-        <p style="margin-left: 500px ;"> ขยะอวกาศในวงโคจรรอบโลก <br>
+        <p style="margin-left: auto ;"> ขยะอวกาศในวงโคจรรอบโลก <br>
             &nbsp; &nbsp; &nbsp; Credit: AGI </p>
             <br>
         <p>&nbsp; &nbsp; การจำกัดจำนวนขยะอวกาศด้วยเทคโนโลยีในปัจจุบันแทบไม่สามารถกระทำได้เลย 
@@ -65,6 +72,13 @@
             <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
         </div>
     </footer>
+    <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
     
 </body>
 </html>

@@ -14,11 +14,18 @@
 <body>
     <header class="header">
         <a href ="index.html" class="logo"> Astronome </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="navbar">
-            <a href="index.html">หน้าหลัก</a>
-            <a href="lesson.html">ดาราศาสตร์</a>
-            <a href="technology.html">เทคโนโลยีอวกาศ</a>
-            <a href="exam.html">ข้อสอบ</a>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="lesson.html">ดาราศาสตร์</a></li>
+                <li><a href="technology.html">เทคโนโลยีอวกาศ</a></li>
+                <li><a href="exam.html">ข้อสอบ</a></li>
+            </ul>
         </nav>
     </header>
     <div class="lesson">
@@ -112,13 +119,13 @@
             <h4>จันทรุปราคา</h4>
             <p>&nbsp; &nbsp;จันทรุปราคา หรือ จันทรคราส เกิดขึ้นจากดวงจันทร์โคจรผ่านเข้าไปในเงาของโลก เราจึงมองเห็นดวงจันทร์แหว่งหายไปในเงามืดแล้วโผล่กลับออกมาอีกครั้ง คนไทยสมัยโบราณเรียกปรากฎการณ์นี้ว่า "ราหูอมจันทร์"    จันทรุปราคาจะเกิดขึ้นเฉพาะในคืนวันเพ็ญ 15 ค่ำ หรือคืนวันพระจันทร์เต็มดวง อย่างไรก็ตามปรากฏการณ์จันทรุปราคาไม่เกิดขึ้นทุกเดือน เนื่องจากระนาบที่โลกโคจรรอบดวงอาทิตย์และระนาบที่ดวงจันทร์โคจรรอบโลกไม่ใช่ระนาบเดียวกัน หากตัดกันเป็นมุม 5 องศา ดังนั้นจึงมีโอกาสที่จะเกิดจันทรุปราคาเพียงปีละ 1 - 2 ครั้ง </p>
             <br>
-            <img style="margin-left: 350px;" src="http://www.lesa.biz/_/rsrc/1305689730992/astronomy/astro-events/lunar-eclipse/lunar_plane.gif" alt="">
-            <p style="margin-left: 290px ;"> <span> ภาพที่ 7 ระนาบวงโคจรของดวงจันทร์ ตัดกับ ระนาบวงโคจรของโลก เป็นมุม 5° </span></p>
+            <img style="margin-left: auto;" src="http://www.lesa.biz/_/rsrc/1305689730992/astronomy/astro-events/lunar-eclipse/lunar_plane.gif" alt="">
+            <p style="margin-left: auto ;"> <span> ภาพที่ 7 ระนาบวงโคจรของดวงจันทร์ ตัดกับ ระนาบวงโคจรของโลก เป็นมุม 5° </span></p>
             <br>
             <h4>เงาโลก </h4>
             <br>
-            <img style="margin-left: 350px;" src="http://www.lesa.biz/_/rsrc/1432190334767/astronomy/astro-events/lunar-eclipse/lunar_eclipse.jpg?height=135&width=400" alt="">
-            <p style="margin-left: 420px ;"> <span> ภาพที่ 8 การเกิดจันทรุปราคา </span></p>
+            <img style="margin-left: auto;" src="http://www.lesa.biz/_/rsrc/1432190334767/astronomy/astro-events/lunar-eclipse/lunar_eclipse.jpg?height=135&width=400" alt="">
+            <p style="margin-left: auto ;"> <span> ภาพที่ 8 การเกิดจันทรุปราคา </span></p>
             <br>
             <div class="list">
                 <ul>
@@ -132,8 +139,8 @@
                 ประเภทของจันทรุปราคา
             </h4>
             <br>
-            <img style="margin-left: 350px;" src="http://www.lesa.biz/_/rsrc/1432190362642/astronomy/astro-events/lunar-eclipse/lunar_eclipse2.jpg?height=180&width=400" alt="">
-            <p style="margin-left: 420px ;"> <span> ภาพที่ 9 การเกิดจันทรุปราคาชนิดต่าง ๆ </span></p>
+            <img style="margin-left: auto;" src="http://www.lesa.biz/_/rsrc/1432190362642/astronomy/astro-events/lunar-eclipse/lunar_eclipse2.jpg?height=180&width=400" alt="">
+            <p style="margin-left: auto ;"> <span> ภาพที่ 9 การเกิดจันทรุปราคาชนิดต่าง ๆ </span></p>
             <br>
             <br>
             <div class="list">
@@ -154,5 +161,12 @@
             <p>Copyright &copy;2023; Designed by <span class="designed">Monthakan</span></p>
         </div>
     </footer>
+     <script>
+        hamgurger = document.querySelector(".hamburger");
+        hamgurger.onclick = function(){
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
